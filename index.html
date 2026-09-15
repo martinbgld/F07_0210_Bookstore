@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/settings.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body onload="createBookList()">
+    <header class="site-header">
+
+        <div class="container header-content">
+            <img src="./assets/icons/book_icos.jpeg" alt="logo DA-Bookstore">
+            <h1><span style="color: red">DA</span> Bookstore<span class="headline-small"> - get your Book
+                    here</span></h1>
+        </div>
+
+    </header>
+
+    <main class="site-main">
+        <div id="book-list" class="container main-content">
+
+            <article id="book-card" class="book-card">
+
+                <header class="card-title">
+                    <h2 id="book-title"></h2>
+                </header>
+                <section class="card-img">
+                    <img src="./assets/img/sik-life-a-book.png" alt="Picture of the Book">
+                </section>
+                <section class="book-details">
+                    <div class="price-like">
+                        <p class="price">Preis</p>
+                        <p class="likes">1234</p>
+                        <div class="like-control">
+                            <input type="checkbox" class="like-checkbox">
+                            <img class="like-img liked-false" src="./assets/icons/icon_heart_line_bk.png"
+                                alt="icon heart like">
+                            <img class="like-img liked-true" src="./assets/icons/icon_heart_red.png" alt="icon liked">
+                        </div>
+                    </div>
+
+                    <table class="table">
+                        <tr>
+                            <td>Author:</td>
+                            <td>Clara Meer</td>
+                        </tr>
+                        <tr>
+                            <td>Erscheinungsjahr:</td>
+                            <td>1980</td>
+                        </tr>
+                        <tr>
+                            <td>Genre:</td>
+                            <td>Krimi</td>
+                        </tr>
+
+                    </table>
+                </section>
+                <section class="comment-section">
+                    <h3>Kommentare:</h3>
+                    <div class="table-container">
+                    <table class="table">
+                        <tr>
+                            <td>Author:</td>
+                            <td>Clara Meer</td>
+                        </tr>
+                    </table>
+                    </div>
+                </section>
+                <section class="new-comment">
+                    <input type="text" class="comment-input">
+                    <button class="comment-send">Send</button>
+                </section>
+
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content"></div>
+
+    </footer>
+
+</body>
+
+</html>

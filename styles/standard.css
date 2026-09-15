@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.is-hidden{
+    display: none;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100dvh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bg-color-primary);
+    color: aliceblue;
+
+    font-family: 'Figtree';
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+.site-header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 99;
+
+    height: var(--header-height);
+    background-color: var(--bg-color-secondary);
+}
+
+.header-content {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.site-main {
+    flex: 1;
+    padding-top: var(--header-height);
+}
+
+.main-content {
+    padding-block: 2rem 3rem;
+    gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-footer {
+    flex-shrink: 0;
+    min-height: var(--footer-height);
+    background-color: var(--bg-color-secondary);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}

@@ -1,0 +1,6 @@
+:root {
+    --header-height: 120px;
+    --footer-height: 120px;
+    --bg-color-primary: rgba(70, 70, 135, 1);
+    --bg-color-secondary: rgba(15, 15, 54, 1);
+}
